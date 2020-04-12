@@ -1,0 +1,67 @@
+[
+    {
+        "customerId": 1,
+        "customerName" : "Dogtown Industries Inc",
+        "transactions":[
+            
+            {
+                "saleId": 1313,
+                "saleDate":"10-12-19",
+                "saleAmt": 120
+            },
+            {
+                "saleId": 23444,
+                "saleDate":"10-13-20",
+                "saleAmt": 112
+            }
+        ]
+    },
+    {
+        "customerId": 2,
+        "customerName" : "Illinois Steel and Lumber",
+        "transactions":[
+            {
+                "saleId": 121,
+                "saleDate":"10-13-19",
+                "saleAmt": 152
+            },
+            {
+                "saleId": 121,
+                "saleDate":"11-13-19",
+                "saleAmt": 152
+            },
+            {
+                "saleId": 231,
+                "saleDate":"11-18-19",
+                "saleAmt": 12
+            },
+            {
+                "saleId": 231,
+                "saleDate":"12-18-19",
+                "saleAmt": 242
+            },
+            {
+                "saleId": 231,
+                "saleDate":"12-18-19",
+                "saleAmt": 72
+            }
+        ]
+    },
+    {
+        "customerId": 2,
+        "customerName" : "Jackson Shipping Co.",
+        "transactions":[
+            
+            {
+                "saleId": 233,
+                "saleDate":"11-11-19",
+                "saleAmt": 52
+            },
+            {
+                "saleId": 313,
+                "saleDate":"01-12-20",
+                "saleAmt": 12
+            }
+        ]
+    }
+]
