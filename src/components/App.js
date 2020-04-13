@@ -5,12 +5,14 @@ import './App.css';
 
 /*
 * Takes entire json doc and reads through all customers
+* TODO: Break this out into a customer, transaction and totals components
+* Set date 3 months in the past from today and show last three months instead of 3 hardcoded months
 */
-const dataInput = data.map((data) => {
+const dataInput = data.map(function(data){
   let transactions = data.transactions;
   let totalPoints = 0;
-  var points = 0;
-  let saleData = transactions.map((transactions) =>{
+  let points = 0;
+  let saleData = transactions.map(function(transactions){
       points = calculatePoints(transactions.saleAmt);
       totalPoints += points;
       return(<li className="list-group-item">Date: {transactions.saleDate} - Amount: ${transactions.saleAmt} - Points earned this transaction: {points}</li>);
@@ -31,8 +33,9 @@ const dataInput = data.map((data) => {
 )
 
 /*
-* This collects points by month
-* 
+* collects points by month
+* input: array of transactions per customer and a 2 digit month
+* output: number
 */
 function oneMonthTotal(transactions, monthToFind){
   var customerTransactions = JSON.parse(JSON.stringify(transactions));
@@ -47,7 +50,8 @@ function oneMonthTotal(transactions, monthToFind){
 }
 
 /* 
-* Calculates points per sale
+* Calculates points per sale per transaction
+* 
 */
 function calculatePoints(saleAmt){
   let points = 0;
